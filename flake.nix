@@ -1,5 +1,7 @@
-# SPDX-FileCopyrightText: Dom Rodriguez <shymega+toybox@shymega.org.uk>
+# SPDX-FileCopyrightText: The Steam-ToyBox Developers
+#
 # SPDX-License-Identifier: GPL-3.0-or-later
+
 {
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
