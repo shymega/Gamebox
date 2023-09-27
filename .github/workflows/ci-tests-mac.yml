@@ -10,7 +10,7 @@ env:
 jobs:
   run-mac-tests:
     name: CI tests for ${{ matrix.target }}
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       fail-fast: true
       matrix:
