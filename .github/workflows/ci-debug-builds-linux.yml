@@ -1,5 +1,5 @@
 ---
-name: Nightly builder
+name: Nightly builder for Linux
 
 on:
   workflow_call:
