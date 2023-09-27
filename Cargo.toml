@@ -7,6 +7,10 @@ name = "steam-toybox"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "stoybox"
+path = "src/main.rs"
+
 [dependencies]
 anyhow = "1.0.75"
 diesel = { version = "2.1.1", features = ["sqlite"] }
