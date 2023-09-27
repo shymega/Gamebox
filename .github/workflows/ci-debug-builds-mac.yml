@@ -55,6 +55,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Upload debug nightly build
-        run: gh release upload steam-toybox-nightly-${{ matrix.target }} ${{ github.workspace }}/steam-toybox-nightly-${{ matrix.target }}.zip -clobber
+        run: gh release upload steam-toybox-nightly-${{ matrix.target }} ${{ github.workspace }}/steam-toybox-nightly-${{ matrix.target }}.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
