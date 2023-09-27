@@ -31,11 +31,6 @@ jobs:
           override: true
           target: ${{ matrix.target }}
           profile: minimal
-      - name: Install Cross
-        if: ${{ steps.rust-cache.outputs.cache-hit != 'true' }}
-        uses: brndnmtthws/rust-action-cargo-binstall@v1.0.1
-        with:
-          packages: cross
       - name: Build for ${{ matrix.target }}
         id: build
         uses: actions-rs/cargo@v1
@@ -43,7 +38,6 @@ jobs:
           command: build
           args: >-
             --all --locked --verbose --target=${{ matrix.target }}
-          use-cross: true
       - name: Zip up the artifacts
         id: zipup
         if: ${{ steps.build.outcome == 'success' }}
