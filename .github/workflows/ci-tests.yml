@@ -7,7 +7,7 @@ name: CI Tests
 
 on:
   push:
-    paths: ["src/**", "Cargo.toml", "Cargo.lock", "rust-toolchain"]
+    paths: ["src/**", "Cargo.toml", "Cargo.lock", "rust-toolchain", "*.nix"]
   workflow_dispatch:
 
 jobs:
@@ -17,4 +17,8 @@ jobs:
 
   test-mac:
     uses: ./.github/workflows/ci-tests-mac.yml
+    secrets: inherit
+
+  test-nix-pm:
+    uses: ./.github/workflows/ci-nix-pm-tests.yml
     secrets: inherit
