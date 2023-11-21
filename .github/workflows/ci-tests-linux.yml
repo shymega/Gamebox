@@ -58,5 +58,4 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: fmt
-          args: --target=x86_64-unknown-linux-musl -- --check
-          use-cross: true
+          args: -- --check

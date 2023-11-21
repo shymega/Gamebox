@@ -50,5 +50,4 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: fmt
-          args: --target=x86_64-apple-darwin -- --check
-          use-cross: true
+          args: -- --check
