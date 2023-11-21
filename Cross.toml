@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 [target.x86_64-unknown-linux-musl]
 pre-build = [
     "dpkg --add-architecture amd64",

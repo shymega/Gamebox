@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 { lib
 , pkgs ? import <nixpkgs>
 , rustPlatform
