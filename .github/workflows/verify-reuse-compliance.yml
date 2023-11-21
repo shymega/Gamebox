@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+name: REUSE Compliance workflow
+
+on:
+  pull_request:
+
+jobs:
+  test-reuse-compliance:
+    name: Test the commit for REUSE Compliance.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: fsfe/reuse-action@v2
