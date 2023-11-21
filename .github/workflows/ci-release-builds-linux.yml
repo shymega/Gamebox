@@ -33,10 +33,6 @@ jobs:
     needs: [create-gh-release]
     name: Release uploader for Linux builds
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        target: [x86_64-unknown-linux-musl]
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -51,7 +47,7 @@ jobs:
           default: true
           components: llvm-tools-preview
           override: true
-          target: ${{ matrix.target }}
+          target: x86_64-unknown-linux-musl
           profile: minimal
       - name: Install Cross
         if: ${{ steps.rust-cache.outputs.cache-hit != 'true' }}
@@ -62,8 +58,8 @@ jobs:
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: stoybox
-          target: ${{ matrix.target }}
+          target: x86_64-unknown-linux-musl
           token: ${{ secrets.GITHUB_TOKEN }}
-          archive: steam-toybox-${{ github.ref_name }}-release-${{ matrix.target }}
+          archive: steam-toybox-${{ github.ref_name }}-release-x86_64-unknown-linux-musl
           zip: all
           checksum: sha256

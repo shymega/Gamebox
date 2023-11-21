@@ -13,12 +13,8 @@ env:
 
 jobs:
   run-linux-tests:
-    name: CI tests for ${{ matrix.target }}
+    name: CI tests for x86_64-unknown-linux-musl
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        target: [x86_64-unknown-linux-musl]
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -33,31 +29,34 @@ jobs:
           profile: minimal
           components: clippy,rustfmt
           override: true
-          target: ${{ matrix.target }}
+          target: x86_64-unknown-linux-musl
           default: true
       - name: Install Cross
         if: ${{ steps.rust-cache.outputs.cache-hit != 'true' }}
         uses: brndnmtthws/rust-action-cargo-binstall@v1.0.1
         with:
           packages: cross
-
       - name: Run tests
         uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --target=${{ matrix.target }}
+          args: --target=x86_64-unknown-linux-musl
           use-cross: true
-
       - name: Run Cargo checks
         uses: actions-rs/cargo@v1
         with:
           command: check
-          args: --target=${{ matrix.target }}
+          args: --target=x86_64-unknown-linux-musl
           use-cross: true
-
       - name: Run Clippy tests
         uses: actions-rs/cargo@v1
         with:
           command: clippy
-          args: --target=${{ matrix.target }}
+          args: --target=x86_64-unknown-linux-musl
+          use-cross: true
+      - name: Run formatting checks
+        uses: actions-rs/cargo@v1
+        with:
+          command: fmt
+          args: --target=x86_64-unknown-linux-musl -- --check
           use-cross: true

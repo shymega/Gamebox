@@ -33,10 +33,6 @@ jobs:
     needs: [create-gh-release]
     name: Release uploader for macOS builds
     runs-on: macos-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        target: [x86_64-apple-darwin]
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -51,14 +47,14 @@ jobs:
           default: true
           components: llvm-tools-preview
           override: true
-          target: ${{ matrix.target }}
+          target: x86_64-apple-darwin
           profile: minimal
       - name: Build & upload Steam-ToyBox on GH Releases
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: stoybox
-          target: ${{ matrix.target }}
+          target: x86_64-apple-darwin
           token: ${{ secrets.GITHUB_TOKEN }}
-          archive: steam-toybox-${{ github.ref_name }}-release-${{ matrix.target }}
+          archive: steam-toybox-${{ github.ref_name }}-release-x86_64-apple-darwin
           zip: all
           checksum: sha256

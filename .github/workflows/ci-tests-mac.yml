@@ -13,12 +13,8 @@ env:
 
 jobs:
   run-mac-tests:
-    name: CI tests for ${{ matrix.target }}
+    name: CI tests for x86_64-apple-darwin
     runs-on: macos-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        target: [x86_64-apple-darwin]
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -33,23 +29,26 @@ jobs:
           profile: minimal
           components: clippy,rustfmt
           override: true
-          target: ${{ matrix.target }}
+          target: x86_64-apple-darwin
           default: true
-
       - name: Run tests
         uses: actions-rs/cargo@v1
         with:
           command: test
-          args: --target=${{ matrix.target }}
-
+          args: --target=x86_64-apple-darwin
       - name: Run Cargo checks
         uses: actions-rs/cargo@v1
         with:
           command: check
-          args: --target=${{ matrix.target }}
-
+          args: --target=x86_64-apple-darwin
       - name: Run Clippy tests
         uses: actions-rs/cargo@v1
         with:
           command: clippy
-          args: --target=${{ matrix.target }}
+          args: --target=x86_64-apple-darwin
+      - name: Run formatting checks
+        uses: actions-rs/cargo@v1
+        with:
+          command: fmt
+          args: --target=x86_64-apple-darwin -- --check
+          use-cross: true

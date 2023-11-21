@@ -13,12 +13,8 @@ env:
 
 jobs:
   build-nightlies-mac:
-    name: Nightly builds for macOS (${{ matrix.target }})
+    name: Nightly builds for macOS (x86_64-apple-darwin)
     runs-on: macos-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        target: [x86_64-apple-darwin]
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -33,19 +29,19 @@ jobs:
           default: true
           components: llvm-tools-preview
           override: true
-          target: ${{ matrix.target }}
+          target: x86_64-apple-darwin
           profile: minimal
-      - name: Build for ${{ matrix.target }}
+      - name: Build for x86_64-apple-darwin
         id: build
         uses: actions-rs/cargo@v1
         with:
           command: build
           args: >-
-            --all --locked --verbose --target=${{ matrix.target }}
+            --all --locked --verbose --target=x86_64-apple-darwin
       - name: Zip up the artifacts
         id: zipup
         if: ${{ steps.build.outcome == 'success' }}
-        run: zip ${{ github.workspace }}/steam-toybox-nightly-${{ matrix.target }}.zip ${{ github.workspace }}/target/${{ matrix.target }}/debug/stoybox
+        run: zip ${{ github.workspace }}/steam-toybox-nightly-x86_64-apple-darwin.zip ${{ github.workspace }}/target/x86_64-apple-darwin/debug/stoybox
       - name: Create nightly release
         continue-on-error: true
         if: ${{ steps.zipup.outcome == 'success' }}
@@ -53,12 +49,12 @@ jobs:
         with:
           draft: false
           prerelease: true
-          body: "Nightly build of `Steam-ToyBox` for target: ${{ matrix.target }}"
-          release_name: steam-toybox-nightly-${{ matrix.target }}
-          tag_name: steam-toybox-nightly-${{ matrix.target }}
+          body: "Nightly build of `Steam-ToyBox` for target: x86_64-apple-darwin"
+          release_name: steam-toybox-nightly-x86_64-apple-darwin
+          tag_name: steam-toybox-nightly-x86_64-apple-darwin
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Upload debug nightly build
-        run: gh release upload steam-toybox-nightly-${{ matrix.target }} ${{ github.workspace }}/steam-toybox-nightly-${{ matrix.target }}.zip --clobber
+        run: gh release upload steam-toybox-nightly-x86_64-apple-darwin ${{ github.workspace }}/steam-toybox-nightly-x86_64-apple-darwin.zip --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
