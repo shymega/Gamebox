@@ -12,7 +12,7 @@ name = "stoybox"
 path = "src/main.rs"
 
 [dependencies]
-anyhow = "1.0.75"
+anyhow = "1.0.76"
 diesel = { version = "2.1.4", features = ["sqlite"] }
 env_logger = "0.10.1"
 futures = "0.3.29"
