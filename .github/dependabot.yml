@@ -1,15 +1,23 @@
-# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
-
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
   - package-ecosystem: "cargo"
     directory: "/"
     schedule:
       interval: "weekly"
+    commit-message:
+      prefix: "chore(deps)"
+    groups:
+      cargo-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(ci-deps)"
+    groups:
+      gh-actions-deps:
+        patterns:
+          - "*"
