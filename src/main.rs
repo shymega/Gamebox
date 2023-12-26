@@ -1,10 +1,9 @@
-// SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+// SPDX-FileCopyrightText: 2023 The Gamebox Developers
 //
-// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-License-Identifier: Apache-2.0
 
-//! Entrypoint to `Steam ToyBox`.
+//! Entrypoint to `Gamebox`.
 #![deny(
-    warnings,
     missing_copy_implementations,
     missing_debug_implementations,
     missing_docs,
@@ -18,3 +17,7 @@
     unused_extern_crates,
     variant_size_differences
 )]
+
+fn main() {
+    unimplemented!()
+}

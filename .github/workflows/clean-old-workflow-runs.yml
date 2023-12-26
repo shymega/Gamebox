@@ -1,21 +1,32 @@
-# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+# SPDX-FileCopyrightText: 2023 The Gamebox Developers
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: Apache-2.0
 
-name: Clean up old workflow runs.
+name: Clean up old & skipped workflow runs
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 1'
 
+permissions:
+    actions: write
+
 jobs:
-  cleanup:
+  clean-old-runs:
     runs-on: ubuntu-latest
     steps:
-      - name: clean workflow runs
-        uses: boredland/action-purge-workflow-runs@main
+      - name: Clean old workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
         with:
-          days-old: 60
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          retain_days: 30
+          keep_minimum_runs: 6
+  clean-skipped-runs:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Clean skipped workflow runs
+          uses: Mattraks/delete-workflow-runs@v2
+          with:
+              delete_run_by_conclusion_pattern: "skipped"
+              retain_days: 1
+              keep_minimum_runs: 1

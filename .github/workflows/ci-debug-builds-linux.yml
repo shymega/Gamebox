@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+# SPDX-FileCopyrightText: 2023 The Gamebox Developers
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: Apache-2.0
 
 ---
 name: Nightly builder for Linux
@@ -55,7 +55,7 @@ jobs:
         with:
           draft: false
           prerelease: true
-          body: "Nightly build of `Steam-ToyBox` for target: x86_64-unknown-linux-musl"
+          body: "Nightly build of `Gamebox` for target: x86_64-unknown-linux-musl"
           release_name: steam-toybox-nightly-x86_64-unknown-linux-musl
           tag_name: steam-toybox-nightly-x86_64-unknown-linux-musl
         env:

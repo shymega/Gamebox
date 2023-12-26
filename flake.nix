@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+# SPDX-FileCopyrightText: 2023 The Gamebox Developers
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: Apache-2.0
 
 {
   inputs = {
@@ -23,8 +23,8 @@
         pkgs = nixpkgs.outputs.legacyPackages.${system};
       in
       {
-        packages.steam-toybox = pkgs.callPackage ./steam-toybox.nix { };
-        packages.default = self.outputs.packages.${system}.steam-toybox;
+        packages.gamebox = pkgs.callPackage ./gamebox.nix { };
+        packages.default = self.outputs.packages.${system}.gamebox;
 
         devShells.default = self.packages.${system}.default.overrideAttrs (super: {
           nativeBuildInputs = with pkgs;
@@ -39,7 +39,7 @@
       })
     // {
       overlays.default = final: prev: {
-        inherit (self.packages.${final.system}) steam-toybox;
+        inherit (self.packages.${final.system}) gamebox;
       };
     };
 }

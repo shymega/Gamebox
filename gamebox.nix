@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+# SPDX-FileCopyrightText: 2023 The Gamebox Developers
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: Apache-2.0
 
 { lib
 , pkgs ? import <nixpkgs>
@@ -8,7 +8,7 @@
 ,
 }:
 rustPlatform.buildRustPackage {
-  name = "steam-toybox";
+  name = "gamebox";
 
   src = lib.cleanSource ./.;
 
@@ -23,7 +23,7 @@ rustPlatform.buildRustPackage {
 
   meta = with lib; {
     description = "";
-    homepage = "https://github.com/shymega/Steam-ToyBox";
+    homepage = "https://github.com/shymega/Gamebox";
     license = licenses.mit;
   };
 }

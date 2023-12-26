@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2023 The Steam-ToyBox Developers
+# SPDX-FileCopyrightText: 2023 The Gamebox Developers
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: Apache-2.0
 
 ---
 name: Release builder for Linux
@@ -54,7 +54,7 @@ jobs:
         uses: brndnmtthws/rust-action-cargo-binstall@v1.0.1
         with:
           packages: cross
-      - name: Build & upload Steam-ToyBox on GH Releases
+      - name: Build & upload Gamebox on GH Releases
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: stoybox
