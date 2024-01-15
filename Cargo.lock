@@ -399,7 +399,6 @@ version = "0.26.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da6bc11b07529f16944307272d5bd9b22530bc7d05751717c9d416586cedab49"
 dependencies = [
- "clap",
  "heck",
  "indexmap 1.9.3",
  "log",
@@ -1051,9 +1050,9 @@ dependencies = [
 
 [[package]]
 name = "extism"
-version = "1.0.0-rc7"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a36960112da6c1bb7a3337c4ea3c482695cb747382621bfdad8280f3aed5f2ff"
+checksum = "0929c64560cac1e9c71562ec1611dce2b383354371547d201802ab4abc23387b"
 dependencies = [
  "anyhow",
  "cbindgen",
@@ -1076,9 +1075,9 @@ dependencies = [
 
 [[package]]
 name = "extism-convert"
-version = "1.0.0-rc7"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "39be4036b8f3b9a7dd9a8b52a06c9999ffe0d8184ad235f96c3ec003a87b66ab"
+checksum = "d01a01edfb12afa6ce5f4d5205831b0630edb867918aa3d2fc829a9dfbfa75f1"
 dependencies = [
  "anyhow",
  "base64",
@@ -1091,9 +1090,9 @@ dependencies = [
 
 [[package]]
 name = "extism-manifest"
-version = "1.0.0-rc7"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "65c5de2e010ef858cf0a6a876aa135fedd323b07cdfa8a24c04e8971e9f4d41a"
+checksum = "fb76af5cf0fd656e6dff25069056ef41ce0eb0541cc98c15b90b601a16fcfacc"
 dependencies = [
  "base64",
  "serde",
