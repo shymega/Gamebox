@@ -21,7 +21,7 @@ proton = ["ge-man", "proton-call"]
 [dependencies]
 anyhow = "1.0.80"
 diesel = { version = "2.1.4", features = ["sqlite"] }
-env_logger = "0.11.2"
+env_logger = "0.11.3"
 extism = "^1.1.0"
 iced = "0.12.1"
 log = "0.4.21"
