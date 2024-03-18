@@ -19,20 +19,20 @@ steam = ["steamid-ng", "steamlocate", "steamworks", "proton"]
 proton = ["ge-man", "proton-call"]
 
 [dependencies]
-anyhow = "1.0.80"
-diesel = { version = "2.1.4", features = ["sqlite"] }
+anyhow = "1.0.81"
+diesel = { version = "2.1.5", features = ["sqlite"] }
 env_logger = "0.11.3"
-extism = "^1.1.0"
+extism = "^1.2.0"
 iced = "0.12.1"
 log = "0.4.21"
 serde = { version = "1.0.197", features = ["derive"] }
 serde_json = "1.0.114"
-thiserror = "1.0.57"
+thiserror = "1.0.58"
 tokio = { version = "1.36.0", features = ["full"] }
 
 [target.x86_64-unknown-linux-musl.dependencies]
 openssl = { version = "0.10", features = ["vendored"] }
-libsqlite3-sys = { version = "0.27.0", features = ["bundled"] }
+libsqlite3-sys = { version = "0.28.0", features = ["bundled"] }
 steamid-ng = { version = "1.0.0", optional = true }
 steamlocate = { version = "1.2.1", features = ["steamid_ng"], optional = true }
 steamworks = { version = "0.11.0", features = ["serde"], optional = true }
