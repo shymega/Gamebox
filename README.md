@@ -9,7 +9,7 @@ Gamebox
 
 # Overview
 
-Gamebox is _your_ cross-platform gaming companion tool.
+Gaming Assistant box, for tweaker gamers. Written in Rust, extendable with WebAssembly.
 
 # License
 
