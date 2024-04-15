@@ -19,7 +19,7 @@ steam = ["steamid-ng", "steamlocate", "steamworks", "proton"]
 proton = ["ge-man", "proton-call"]
 
 [dependencies]
-anyhow = "1.0.81"
+anyhow = "1.0.82"
 diesel = { version = "2.1.5", features = ["sqlite"] }
 env_logger = "0.11.3"
 extism = "^1.2.0"
