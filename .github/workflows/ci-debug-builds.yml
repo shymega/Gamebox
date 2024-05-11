@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 The Gamebox Developers
+# SPDX-FileCopyrightText: 2024 The Gamebox Developers
 #
 # SPDX-License-Identifier: Apache-2.0
 
