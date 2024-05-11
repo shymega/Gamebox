@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.valvesoftware.Steam.Utility.gamebox</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <name>Gamebox</name>
+  <summary>Gaming Assistant box, for tweaking gamers. Written in Rust, extendable with WebAssembly.</summary>
+  <description>
+  </description>
+  <screenshots>
+  </screenshots>
+  <url type="homepage">https://shymega.github.io/Gamebox</url>
+  <content_rating type="oars-1.0" />
+  <releases>
+    <release version="0.1.0" date="2020-02-08">
+      <description>
+        <p>First release of Gamebox.</p>
+      </description>
+    </release>
+  </releases>
+  <developer_name>Dom Rodriguez (shymega)</developer_name>
+  <update_contact>shymega+gamebox@shymega.org.uk</update_contact>
+
+  <launchable type="desktop-id">com.valvesoftware.Steam.Utility.gamebox.desktop</launchable>
+</component>
+
+

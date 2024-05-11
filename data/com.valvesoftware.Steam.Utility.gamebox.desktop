@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Gamebox
+Comment=Gaming Assistant box, for tweaker gamers. Written in Rust, extendable with WebAssembly.
+Type=Application
+Exec=gamebox
+Terminal=false
+Categories=Game
+Keywords=Rust;Flatpak;Gaming;
