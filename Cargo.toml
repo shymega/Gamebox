@@ -21,14 +21,14 @@ proton = ["ge-man", "proton-call"]
 [dependencies]
 anyhow = "1.0.86"
 diesel = { version = "2.2.2", features = ["sqlite"] }
-env_logger = "0.11.3"
-extism = "^1.4.1"
+env_logger = "0.11.5"
+extism = "^1.5.0"
 iced = "0.12.1"
 log = "0.4.22"
 serde = { version = "1.0.204", features = ["derive"] }
-serde_json = "1.0.120"
+serde_json = "1.0.121"
 thiserror = "1.0.63"
-tokio = { version = "1.38.1", features = ["full"] }
+tokio = { version = "1.39.2", features = ["full"] }
 
 [target.x86_64-unknown-linux-musl.dependencies]
 openssl = { version = "0.10", features = ["vendored"] }
