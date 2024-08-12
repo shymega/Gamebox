@@ -25,8 +25,8 @@ env_logger = "0.11.5"
 extism = "^1.5.0"
 iced = "0.12.1"
 log = "0.4.22"
-serde = { version = "1.0.204", features = ["derive"] }
-serde_json = "1.0.122"
+serde = { version = "1.0.206", features = ["derive"] }
+serde_json = "1.0.124"
 thiserror = "1.0.63"
 tokio = { version = "1.39.2", features = ["full"] }
 
