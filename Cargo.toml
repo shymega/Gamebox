@@ -20,13 +20,13 @@ proton = ["ge-man", "proton-call"]
 
 [dependencies]
 anyhow = "1.0.86"
-diesel = { version = "2.2.3", features = ["sqlite"] }
+diesel = { version = "2.2.4", features = ["sqlite"] }
 env_logger = "0.11.5"
-extism = "^1.5.0"
+extism = "^1.6.0"
 iced = "0.12.1"
 log = "0.4.22"
 serde = { version = "1.0.209", features = ["derive"] }
-serde_json = "1.0.127"
+serde_json = "1.0.128"
 thiserror = "1.0.63"
 tokio = { version = "1.40.0", features = ["full"] }
 
