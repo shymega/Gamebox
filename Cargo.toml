@@ -19,15 +19,15 @@ steam = ["steamid-ng", "steamlocate", "steamworks", "proton"]
 proton = ["ge-man", "proton-call"]
 
 [dependencies]
-anyhow = "1.0.94"
+anyhow = "1.0.95"
 diesel = { version = "2.2.6", features = ["sqlite"] }
-env_logger = "0.11.5"
+env_logger = "0.11.6"
 extism = "^1.9.1"
 iced = "0.13.1"
 log = "0.4.22"
 serde = { version = "1.0.216", features = ["derive"] }
-serde_json = "1.0.133"
-thiserror = "2.0.7"
+serde_json = "1.0.134"
+thiserror = "2.0.9"
 tokio = { version = "1.42.0", features = ["full"] }
 
 [target.x86_64-unknown-linux-musl.dependencies]
