@@ -17,7 +17,7 @@ jobs:
     outputs:
       should_run: ${{ steps.should_run.outputs.should_run }}
     steps:
-      - uses: actions/checkout@v4.1.4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
