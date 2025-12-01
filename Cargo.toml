@@ -22,7 +22,7 @@ proton = ["ge-man", "proton-call"]
 anyhow = "1.0.100"
 diesel = { version = "2.2.12", features = ["sqlite"] }
 env_logger = "0.11.6"
-extism = "^1.12.0"
+extism = "^1.13.0"
 iced = "0.13.1"
 log = "0.4.28"
 serde = { version = "1.0.219", features = ["derive"] }
