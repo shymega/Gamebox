@@ -1853,7 +1853,7 @@ dependencies = [
  "steamid-ng 3.0.0",
  "steamlocate",
  "steamworks",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "tokio",
 ]
 
@@ -2266,7 +2266,7 @@ dependencies = [
  "iced_runtime",
  "iced_widget",
  "iced_winit",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
 ]
 
 [[package]]
@@ -2283,7 +2283,7 @@ dependencies = [
  "num-traits 0.2.17",
  "rustc-hash 2.0.0",
  "smol_str",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "web-time",
 ]
 
@@ -2327,7 +2327,7 @@ dependencies = [
  "log",
  "raw-window-handle",
  "rustc-hash 2.0.0",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "unicode-segmentation",
 ]
 
@@ -2351,7 +2351,7 @@ dependencies = [
  "iced_tiny_skia",
  "iced_wgpu",
  "log",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
 ]
 
 [[package]]
@@ -2364,7 +2364,7 @@ dependencies = [
  "iced_core",
  "iced_futures",
  "raw-window-handle",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
 ]
 
 [[package]]
@@ -2400,7 +2400,7 @@ dependencies = [
  "iced_graphics",
  "log",
  "rustc-hash 2.0.0",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "wgpu",
 ]
 
@@ -2414,7 +2414,7 @@ dependencies = [
  "log",
  "num-traits 0.2.17",
  "rustc-hash 2.0.0",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "unicode-segmentation",
 ]
 
@@ -2429,7 +2429,7 @@ dependencies = [
  "log",
  "mundy",
  "rustc-hash 2.0.0",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "tracing",
  "wasm-bindgen-futures",
  "web-sys",
@@ -2997,7 +2997,7 @@ dependencies = [
  "once_cell",
  "rustc-hash 1.1.0",
  "spirv",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "unicode-ident",
 ]
 
@@ -4601,7 +4601,7 @@ checksum = "60bdd87fcb4c9764b024805fb2df5f1d659bea6e629fdbdcdcfc4042b9a640d0"
 dependencies = [
  "js-sys",
  "once_cell",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "tokio",
  "wasm-bindgen",
  "wasm-bindgen-futures",
@@ -4666,7 +4666,7 @@ dependencies = [
  "paste",
  "serde",
  "steamworks-sys",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
 ]
 
 [[package]]
@@ -4838,11 +4838,11 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "2.0.17"
+version = "2.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f63587ca0f12b72a0600bcba1d40081f830876000bb46dd2337a3051618f4fc8"
+checksum = "4288b5bcbc7920c07a1149a35cf9590a2aa808e0bc1eafaade0b80947865fbc4"
 dependencies = [
- "thiserror-impl 2.0.17",
+ "thiserror-impl 2.0.18",
 ]
 
 [[package]]
@@ -4858,9 +4858,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror-impl"
-version = "2.0.17"
+version = "2.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ff15c8ecd7de3849db632e14d18d2571fa09dfc5ed93479bc4485c7a517c913"
+checksum = "ebc4ee7f67670e9b64d05fa4253e753e016c6c95ff35b89b7941d6b856dec1d5"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -5401,7 +5401,7 @@ dependencies = [
  "log",
  "rustix 1.1.2",
  "system-interface",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "tracing",
  "wasmtime",
  "wiggle",
@@ -5673,7 +5673,7 @@ dependencies = [
  "pulley-interpreter",
  "smallvec",
  "target-lexicon",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "wasmparser 0.239.0",
  "wasmtime-environ",
  "wasmtime-internal-math",
@@ -6027,7 +6027,7 @@ dependencies = [
  "raw-window-handle",
  "rustc-hash 1.1.0",
  "smallvec",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "wgpu-core-deps-apple",
  "wgpu-core-deps-emscripten",
  "wgpu-core-deps-windows-linux-android",
@@ -6103,7 +6103,7 @@ dependencies = [
  "raw-window-handle",
  "renderdoc-sys",
  "smallvec",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "wasm-bindgen",
  "web-sys",
  "wgpu-types",
@@ -6121,7 +6121,7 @@ dependencies = [
  "bytemuck",
  "js-sys",
  "log",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "web-sys",
 ]
 
@@ -6134,7 +6134,7 @@ dependencies = [
  "anyhow",
  "async-trait",
  "bitflags 2.10.0",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "tracing",
  "wasmtime",
  "wiggle-macro",
@@ -6211,7 +6211,7 @@ dependencies = [
  "regalloc2",
  "smallvec",
  "target-lexicon",
- "thiserror 2.0.17",
+ "thiserror 2.0.18",
  "wasmparser 0.239.0",
  "wasmtime-environ",
  "wasmtime-internal-cranelift",
