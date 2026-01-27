@@ -1536,14 +1536,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/diesel/diesel-2.3.5.crate",
-        "sha256": "e130c806dccc85428c564f2dc5a96e05b6615a27c9a28776bd7761a9af4bb552",
-        "dest": "cargo/vendor/diesel-2.3.5"
+        "url": "https://static.crates.io/crates/diesel/diesel-2.3.6.crate",
+        "sha256": "d9b6c2fc184a6fb6ebcf5f9a5e3bbfa84d8fd268cdfcce4ed508979a6259494d",
+        "dest": "cargo/vendor/diesel-2.3.6"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e130c806dccc85428c564f2dc5a96e05b6615a27c9a28776bd7761a9af4bb552\", \"files\": {}}",
-        "dest": "cargo/vendor/diesel-2.3.5",
+        "contents": "{\"package\": \"d9b6c2fc184a6fb6ebcf5f9a5e3bbfa84d8fd268cdfcce4ed508979a6259494d\", \"files\": {}}",
+        "dest": "cargo/vendor/diesel-2.3.6",
         "dest-filename": ".cargo-checksum.json"
     },
     {
