@@ -223,14 +223,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.101.crate",
-        "sha256": "5f0e0fee31ef5ed1ba1316088939cea399010ed7731dba877ed44aeb407a75ea",
-        "dest": "cargo/vendor/anyhow-1.0.101"
+        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.102.crate",
+        "sha256": "7f202df86484c868dbad7eaa557ef785d5c66295e41b460ef922eca0723b842c",
+        "dest": "cargo/vendor/anyhow-1.0.102"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5f0e0fee31ef5ed1ba1316088939cea399010ed7731dba877ed44aeb407a75ea\", \"files\": {}}",
-        "dest": "cargo/vendor/anyhow-1.0.101",
+        "contents": "{\"package\": \"7f202df86484c868dbad7eaa557ef785d5c66295e41b460ef922eca0723b842c\", \"files\": {}}",
+        "dest": "cargo/vendor/anyhow-1.0.102",
         "dest-filename": ".cargo-checksum.json"
     },
     {
