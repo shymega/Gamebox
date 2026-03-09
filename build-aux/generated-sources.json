@@ -6398,14 +6398,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tokio/tokio-1.49.0.crate",
-        "sha256": "72a2903cd7736441aac9df9d7688bd0ce48edccaadf181c3b90be801e81d3d86",
-        "dest": "cargo/vendor/tokio-1.49.0"
+        "url": "https://static.crates.io/crates/tokio/tokio-1.50.0.crate",
+        "sha256": "27ad5e34374e03cfffefc301becb44e9dc3c17584f414349ebe29ed26661822d",
+        "dest": "cargo/vendor/tokio-1.50.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"72a2903cd7736441aac9df9d7688bd0ce48edccaadf181c3b90be801e81d3d86\", \"files\": {}}",
-        "dest": "cargo/vendor/tokio-1.49.0",
+        "contents": "{\"package\": \"27ad5e34374e03cfffefc301becb44e9dc3c17584f414349ebe29ed26661822d\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-1.50.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
