@@ -5995,14 +5995,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/steamworks/steamworks-0.13.0.crate",
-        "sha256": "0974cb1b6b5588f788a3edcb7e6e5e964388ae9d317c723b1009d2699790f66d",
-        "dest": "cargo/vendor/steamworks-0.13.0"
+        "url": "https://static.crates.io/crates/steamworks/steamworks-0.13.1.crate",
+        "sha256": "5ff29921f6a7e8c85b0c971ec3c42002b9f535e3b8f4358cb22911d43709739a",
+        "dest": "cargo/vendor/steamworks-0.13.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"0974cb1b6b5588f788a3edcb7e6e5e964388ae9d317c723b1009d2699790f66d\", \"files\": {}}",
-        "dest": "cargo/vendor/steamworks-0.13.0",
+        "contents": "{\"package\": \"5ff29921f6a7e8c85b0c971ec3c42002b9f535e3b8f4358cb22911d43709739a\", \"files\": {}}",
+        "dest": "cargo/vendor/steamworks-0.13.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6411,14 +6411,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tokio/tokio-1.52.2.crate",
-        "sha256": "110a78583f19d5cdb2c5ccf321d1290344e71313c6c37d43520d386027d18386",
-        "dest": "cargo/vendor/tokio-1.52.2"
+        "url": "https://static.crates.io/crates/tokio/tokio-1.52.3.crate",
+        "sha256": "8fc7f01b389ac15039e4dc9531aa973a135d7a4135281b12d7c1bc79fd57fffe",
+        "dest": "cargo/vendor/tokio-1.52.3"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"110a78583f19d5cdb2c5ccf321d1290344e71313c6c37d43520d386027d18386\", \"files\": {}}",
-        "dest": "cargo/vendor/tokio-1.52.2",
+        "contents": "{\"package\": \"8fc7f01b389ac15039e4dc9531aa973a135d7a4135281b12d7c1bc79fd57fffe\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-1.52.3",
         "dest-filename": ".cargo-checksum.json"
     },
     {
